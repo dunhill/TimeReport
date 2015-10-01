@@ -1,0 +1,13 @@
+#include <string>
+#include <sstream>
+
+// the configured options and settings for Tutorial
+#define TimeReport_VERSION_MAJOR @TimeReport_VERSION_MAJOR@
+#define TimeReport_VERSION_MINOR @TimeReport_VERSION_MINOR@
+
+std::string get_version( )
+{
+    std::ostringstream result;
+    result << TimeReport_VERSION_MAJOR << "." << TimeReport_VERSION_MINOR;
+    return result.str( );
+}
