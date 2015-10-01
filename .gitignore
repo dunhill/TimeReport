@@ -5,3 +5,9 @@
 # Executables
 *.exe
 *.out
+
+# Build diretory
+build/
+
+# CMake
+CMakeLists.txt.user
