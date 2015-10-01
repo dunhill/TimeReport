@@ -22,8 +22,7 @@ int main(int argc, char *argv[])
         }
 
         std::string file_name(params.get_filename( ));
-        std::ofstream out_file(file_name.c_str( ),
-                               std::ios_base::out | std::ios_base::app);
+        std::ofstream out_file(file_name.c_str( ), std::ios_base::out | std::ios_base::app);
         out_file << "test" << std::endl;
         out_file.close( );
     }
