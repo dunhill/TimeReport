@@ -7,3 +7,11 @@ BreakBeforeBinaryOperators: true
 
 BreakBeforeBraces: Allman
 SpaceInEmptyParentheses: true
+SpacesInParentheses: true
+SpacesInSquareBrackets: true
+
+AllowShortBlocksOnASingleLine: false
+AllowShortIfStatementsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: false
+AllowShortCaseLabelsOnASingleLine: false
+AllowShortLoopsOnASingleLine: false

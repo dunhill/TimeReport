@@ -5,28 +5,17 @@
 class AppParams
 {
 public:
-    static AppParams parse(int argc, char *argv[])
-    {
-        AppParams result;
-        result.m_file_set = (argc > 1);
-        if (result.m_file_set)
-        {
-            result.m_filename = argv[1];
-        }
-        return result;
-    }
+    static AppParams parse( int argc, char *argv[] );
+    static void output_usage( );
 
-    bool is_file_set() const
-    {
-        return m_file_set;
-    }
+    bool valid( ) const;
 
-    std::string get_filename() const
-    {
-        return m_filename;
-    }
+    std::string get_filename( ) const;
 
 private:
-    bool m_file_set;
+    AppParams( ) : m_valid( false ), m_filename( "" ){};
+
+private:
+    bool m_valid;
     std::string m_filename;
 };

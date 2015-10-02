@@ -18,4 +18,4 @@ configure_file (
 # add the binary tree to the search path for include files
 include_directories("${PROJECT_BINARY_DIR}")
 
-add_executable(tr src/tr.cpp)
+add_executable(tr src/tr.cpp src/AppParams.cpp)
